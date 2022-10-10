@@ -1,7 +1,7 @@
 :root {
   --width: 500px;
   --heigth: 300px;
-  --size:25px
+  --size: 25px
 }
 
 body {
@@ -14,13 +14,14 @@ body {
   font-size: var(--size);
   color: rgb(220, 209, 196);
 }
-body::-webkit-scrollbar{
+
+body::-webkit-scrollbar {
   background-color: rgb(149, 45, 45);
   width: 20px;
   border-radius: 10px;
 }
 
-body::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb {
   background-color: rgb(220, 209, 196);
   border-radius: 10px;
 }
@@ -81,7 +82,7 @@ button {
   border: 1px solid black;
   border-radius: 5px;
   width: var(--width);
-  height:var(--heigth);
+  height: var(--heigth);
   gap: 15px;
   padding: 30px;
   transition: all 2s ease;
@@ -101,7 +102,7 @@ button {
   border: 1px solid black;
   border-radius: 5px;
   width: var(--width);
-  height:var(--heigth);
+  height: var(--heigth);
   gap: 15px;
   padding: 30px;
   transition: all 2s ease;
@@ -111,6 +112,7 @@ button {
   top: -100%;
   backdrop-filter: blur(15px);
 }
+
 .card_list {
   list-style: none;
   padding: 0;
@@ -136,7 +138,6 @@ input {
   border-radius: 5px;
   font-size: var(--size);
 }
-
 
 .card_upload,
 .card__update,
@@ -166,45 +167,50 @@ button:hover {
 
 
 
-@media(max-width:700px){
+@media(max-width:700px) {
   :root {
     --width: 400px;
     --heigth: 300px;
-    --size:20px
+    --size: 20px
   }
 }
-@media(max-width:550px){
+
+@media(max-width:550px) {
   :root {
     --width: 300px;
     --heigth: 300px;
-    --size:15px
+    --size: 15px
   }
 }
-@media(max-width:430px){
+
+@media(max-width:430px) {
   :root {
     --width: 200px;
     --heigth: 300px;
-    --size:10px
+    --size: 10px
   }
 }
-@media(max-width:320px){
+
+@media(max-width:320px) {
   :root {
     --width: 150px;
     --heigth: 280px;
-    --size:8px
+    --size: 8px
   }
 }
-@media(max-width:260px){
+
+@media(max-width:260px) {
   :root {
     --width: 100px;
     --heigth: 250px;
-    --size:5px
+    --size: 5px
   }
 }
-@media(max-width:200px){
+
+@media(max-width:200px) {
   :root {
     --width: 50px;
     --heigth: 250px;
-    --size:1px
+    --size: 1px
   }
 }

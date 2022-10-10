@@ -12,12 +12,12 @@ function App() {
   const [bring, setbring] = useState()
   const formdata = useRef()
 
-const createNewUser=()=>{
-setcreate("Activo")
-}
-const removeNewUser =()=>{
-  setcreate()
-}
+  const createNewUser = () => {
+    setcreate("Activo")
+  }
+  const removeNewUser = () => {
+    setcreate()
+  }
   useEffect(() => {
     if (bring) {
       formdata.current.email.value = bring.email
@@ -117,19 +117,19 @@ const removeNewUser =()=>{
       {information?.map(info =>
         <div className='card_information'>
           <div className='card_buttons'>
-            <button onClick={()=>deleteData(info.id)} id={info.id} className='card_delete'><MdDelete /></button>
+            <button onClick={() => deleteData(info.id)} id={info.id} className='card_delete'><MdDelete /></button>
             <button onClick={() => bringData(info)} id={info.id} className='card_update'><GoPencil /></button>
           </div>
           <Information key={info.id} info={info} />
         </div>)}
-        <Form
+      <Form
         formdata={formdata}
         bring={bring}
         updateData={updateData}
         createData={createData}
         create={create}
-        removeNewUser={removeNewUser}/>
-</div>
+        removeNewUser={removeNewUser} />
+    </div>
   )
 }
 
